@@ -276,6 +276,6 @@ export const footer_data = [
   },
   {
     title: "Follow Us",
-    links: ["Instagram", "Facebook", "YouTube"],
+    links: ["Instagram", "Twitter", "Facebook", "YouTube"],
   },
 ];
