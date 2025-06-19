@@ -7,7 +7,8 @@ const NewLetter = () => {
         Never Miss a Blogs!
       </h1>
       <p className="md:text-lg text-gray-500/70 pb-8">
-        Subscribe to get the latest blog, new tech, and exclusive news.
+        Đăng ký để nhận thông tin mới nhất về blog, công nghệ mới và tin tức độc
+        quyền.
       </p>
       <form className="flex items-center justify-between max-w-2xl w-full md:h-13 h-12">
         <input
@@ -20,7 +21,7 @@ const NewLetter = () => {
           type="submit"
           className="md:px-12 px-8 h-full text-white bg-primary/80 hover:bg-primary transition-all cursor-pointer rounded-md rounded-1-none"
         >
-          Subcribe
+          Đăng ký
         </button>
       </form>
     </div>

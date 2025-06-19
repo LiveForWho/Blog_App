@@ -26,7 +26,7 @@ const Layout = () => {
           onClick={logout}
           className="text-sm px-8 py-2 bg-primary text-white rounded-full cursor-pointer"
         >
-          Logout
+          Đăng xuất
         </button>
       </div>
       <div className="flex h-[calc(100vh-70px)]">

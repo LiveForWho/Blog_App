@@ -27,7 +27,7 @@ const Sidebar = () => {
         }
       >
         <img src={assets.add_icon} className="min-w-4 w-5" />
-        <p className="hidden md:inline-block">Add blogs</p>
+        <p className="hidden md:inline-block">Thêm blog</p>
       </NavLink>
 
       <NavLink
@@ -39,7 +39,7 @@ const Sidebar = () => {
         }
       >
         <img src={assets.list_icon} className="min-w-4 w-5" />
-        <p className="hidden md:inline-block">List blogs</p>
+        <p className="hidden md:inline-block">Danh sách blog</p>
       </NavLink>
 
       <NavLink
@@ -51,7 +51,7 @@ const Sidebar = () => {
         }
       >
         <img src={assets.comment_icon} className="min-w-4 w-5" />
-        <p className="hidden md:inline-block">Comments</p>
+        <p className="hidden md:inline-block">Bình luận</p>
       </NavLink>
     </div>
   );

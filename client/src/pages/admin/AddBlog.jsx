@@ -79,7 +79,7 @@ const AddBlog = () => {
       className="flex-1 bg-blue-50/50 text-gray-600 h-full overflow-scroll"
     >
       <div className="bg-white w-full max-w-3xl p-4 md:p-10 sm:m-10 shadow rounded">
-        <p>Upload thumbnail</p>
+        <p>Tải ảnh</p>
         <label htmlFor="image">
           <img
             src={!image ? assets.upload_area : URL.createObjectURL(image)}
@@ -93,7 +93,7 @@ const AddBlog = () => {
             required
           />
         </label>
-        <p className="mt-4">Blog Title</p>
+        <p className="mt-4">Tiêu đề blog</p>
         <input
           type="text"
           placeholder="Type here"
@@ -103,7 +103,7 @@ const AddBlog = () => {
           value={title}
         />
 
-        <p className="mt-4">Sub Title</p>
+        <p className="mt-4">Phụ đề</p>
         <input
           type="text"
           placeholder="Type here"
@@ -113,7 +113,7 @@ const AddBlog = () => {
           value={subTitle}
         />
 
-        <p className="mt-4">Blog Description</p>
+        <p className="mt-4">Mô tả blog</p>
         <div className="max-w-lg h-74 pb-16 sm:pb-10 pt-2 relative">
           <div ref={editorRef}></div>
           {loading && (
@@ -127,16 +127,16 @@ const AddBlog = () => {
             type="button"
             className="absolute bottom-1 right-2 ml-2 text-xs text-white bg-black/70 px-4 py-1.5 rounded hover:underline cursor-pointer"
           >
-            Generate with AI
+            Tạo bằng AI
           </button>
         </div>
-        <p className="mt-4">Blog Category</p>
+        <p className="mt-4">Thể loại Blog</p>
         <select
           onChange={(e) => setCategory(e.target.value)}
           name="category"
           className="mt-2 px-3 py-2 border text-gray-500 border-gray-300 outline-none rounded"
         >
-          <option value="">Select Category</option>
+          <option value="">Chọn danh mục</option>
           {blogCategories.map((item, index) => {
             return (
               <option key={index} value={item}>
@@ -146,7 +146,7 @@ const AddBlog = () => {
           })}
         </select>
         <div className="flex gap-2 mt-4">
-          <p>Publish Now</p>
+          <p>Xuất bản ngay</p>
           <input
             type="checkbox"
             checked={isPublished}
@@ -159,7 +159,7 @@ const AddBlog = () => {
           type="submit"
           className="mt-8 w-40 h-10 bg-primary text-white rounded cursor-pointer text-sm"
         >
-          {isAdding ? "Adding..." : "Add Blog"}
+          {isAdding ? "Đang thêm..." : "Thêm Blog"}
         </button>
       </div>
     </form>

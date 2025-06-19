@@ -32,11 +32,9 @@ const Login = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="w-full py-6 text-center">
             <h1 className="text-3xl font-bold">
-              <span className="text-primary">Admin</span> Login
+              <span className="text-primary">Admin</span> Đăng nhập
             </h1>
-            <p className="font-light">
-              Enter your credentials to access the admin panel
-            </p>
+            <p className="font-light">Nhập thông tin đăng nhập của bạn.</p>
           </div>
           <form
             onSubmit={handleSubmit}
@@ -49,18 +47,18 @@ const Login = () => {
                 value={email}
                 type="email"
                 required
-                placeholder="Your Email"
+                placeholder="Email"
                 className="border-b-2 border-gray-300 p-2 outline-none mb-6"
               />
             </div>
             <div className="flex flex-col">
-              <label>Password</label>
+              <label>Mật khẩu</label>
               <input
                 onChange={(e) => setPassword(e.target.value)}
                 value={password}
                 type="password"
                 required
-                placeholder="Your Password"
+                placeholder="Mật khẩu"
                 className="border-b-2 border-gray-300 p-2 outline-none mb-6"
               />
             </div>
@@ -68,7 +66,7 @@ const Login = () => {
               type="submit"
               className="w-full py-3 font-medium bg-primary text-white rounded cursor-pointer hover:bg-primary/90 transition-all"
             >
-              Login
+              Đăng nhập
             </button>
           </form>
         </div>

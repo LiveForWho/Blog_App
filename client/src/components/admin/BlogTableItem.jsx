@@ -9,9 +9,7 @@ const BlogTableItem = ({ blog, fetchBlogs, index }) => {
   const blogDate = new Date(createdAt);
 
   const deleteBlog = async () => {
-    const confirm = window.confirm(
-      "Are you sure you want to delete this blog?"
-    );
+    const confirm = window.confirm("Bạn có chắc chắn muốn xóa blog này không?");
     if (!confirm) return;
     try {
       const { data } = await axios.post("/api/blog/delete", { id: blog._id });
@@ -53,7 +51,7 @@ const BlogTableItem = ({ blog, fetchBlogs, index }) => {
             blog.isPublished ? "text-green-600" : "text-orange-700"
           }`}
         >
-          {blog.isPublished ? "Published" : "Unpublished"}
+          {blog.isPublished ? "Đã xuất bản" : "Chưa xuất bản"}
         </p>
       </td>
       <td className="px-2 py-4 flex text-xs gap-3">
@@ -61,7 +59,7 @@ const BlogTableItem = ({ blog, fetchBlogs, index }) => {
           onClick={togglePublish}
           className="border px-2 py-0.5 mt-1 rounded cursor-pointer"
         >
-          {blog.isPublished ? "Unpublish" : "Publish"}
+          {blog.isPublished ? "Hủy xuất bản" : "Xuất bản"}
         </button>
         <img
           onClick={deleteBlog}

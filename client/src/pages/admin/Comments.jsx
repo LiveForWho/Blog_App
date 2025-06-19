@@ -24,7 +24,7 @@ const Comments = () => {
   return (
     <div className="flex-1 pt-5 px-5 sm:pt-12 sm:pl-16 bg-blue-50/50">
       <div className="flex justify-between items-center max-w-3xl">
-        <h1>Comments</h1>
+        <h1>Bình luận</h1>
         <div className="flex gap-4">
           <button
             onClick={() => setFilter("Approved")}
@@ -32,7 +32,7 @@ const Comments = () => {
               filter === "Approved" ? "text-primary" : "text-gray-700"
             }`}
           >
-            Approved
+            Chấp thuận
           </button>
 
           <button
@@ -41,7 +41,7 @@ const Comments = () => {
               filter === "Not Approved" ? "text-primary" : "text-gray-700"
             }`}
           >
-            Not Approved
+            Không chấp thuận
           </button>
         </div>
       </div>
@@ -50,13 +50,13 @@ const Comments = () => {
           <thead className="text-xs text-gray-700 text-left uppercase">
             <tr>
               <th scope="col" className="px-6 py-3">
-                Blog Title & Comments
+                Tiêu đề blog & Bình luận
               </th>
               <th scope="col" className="px-6 py-3 max-sm:hidden">
-                Date
+                Ngày thêm
               </th>
               <th scope="col" className="px-6 py-3">
-                Actions
+                Hoạt động
               </th>
             </tr>
           </thead>

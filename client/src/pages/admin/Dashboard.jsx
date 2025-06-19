@@ -37,7 +37,7 @@ const Dashboard = () => {
             <p className="text-xl font-semibold text-gray-600">
               {dashboardData.blogs}
             </p>
-            <p className="text-gray-400 font-light">Blogs</p>
+            <p className="text-gray-400 font-light">Blog</p>
           </div>
         </div>
 
@@ -47,7 +47,7 @@ const Dashboard = () => {
             <p className="text-xl font-semibold text-gray-600">
               {dashboardData.comments}
             </p>
-            <p className="text-gray-400 font-light">Comments</p>
+            <p className="text-gray-400 font-light">Bình luận</p>
           </div>
         </div>
 
@@ -57,14 +57,14 @@ const Dashboard = () => {
             <p className="text-xl font-semibold text-gray-600">
               {dashboardData.drafts}
             </p>
-            <p className="text-gray-400 font-light">Drafts</p>
+            <p className="text-gray-400 font-light">Bản nháp</p>
           </div>
         </div>
       </div>
       <div>
         <div className="flex items-center gap-3 m-4 mt-6 text-gray-600">
           <img src={assets.dashboard_icon_4} />
-          <p>Latest Blogs</p>
+          <p>Blog mới nhất</p>
         </div>
         <div className="relative max-w-4xl overflow-x-auto shadow rounded-1g scrollbar-hide bg-white">
           <table className="w-full text-sm text-gray-500">
@@ -74,16 +74,16 @@ const Dashboard = () => {
                   #
                 </th>
                 <th scope="col" className="px-2 py-4">
-                  Blog Title
+                  Tiêu đề blog
                 </th>
                 <th scope="col" className="px-2 py-4 max:sm-hidden">
-                  Date
+                  Ngày
                 </th>
                 <th scope="col" className="px-2 py-4 max:sm-hidden">
-                  Status
+                  Trạng thái
                 </th>
                 <th scope="col" className="px-2 py-4">
-                  Actions
+                  Hoạt động
                 </th>
               </tr>
             </thead>

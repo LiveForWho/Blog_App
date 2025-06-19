@@ -72,7 +72,7 @@ const Blog = () => {
       <Navbar />
       <div className="text-center mt-20 text-gray-600">
         <p className="text-primary py-4 font-medium">
-          Published on {Moment(data.createdAt).format("MMMM Do YYYY")}
+          Xuất bản vào {Moment(data.createdAt).format("MMMM Do YYYY")}
         </p>
         <h1 className="text-2xl sm:text-5xl font-semibold max-w-2x1 mx-auto text-gray-800">
           {data.title}
@@ -112,7 +112,7 @@ const Blog = () => {
       </div>
       {/* Add comments section */}
       <div className="max-w-3xl mx-auto">
-        <p className="font-semibold mb-4">Add your comment</p>
+        <p className="font-semibold mb-4">Thêm bình luận của bạn</p>
         <form
           onSubmit={addComment}
           className="flex flex-col items-start gap-4 max-w-lg"
@@ -121,27 +121,29 @@ const Blog = () => {
             onChange={(e) => setName(e.target.value)}
             value={name}
             type="text"
-            placeholder="Name"
+            placeholder="Tên"
             required
             className="w-full p-2 border border-gray-300 rounded outline-none"
           />
           <textarea
             onChange={(e) => setContent(e.target.value)}
             value={content}
-            placeholder="Comment"
+            placeholder="Bình luận"
             className="w-full p-2 border border-gray-300 rounded outline-none h-48"
           ></textarea>
           <button
             type="submit"
             className="bg-primary text-white rounded p-2 px-8 hover:scale-102 transition-all cursor-pointer"
           >
-            Submit
+            Thêm
           </button>
         </form>
       </div>
       {/* Share Buttons */}
       <div className="my-24 max-w-3xl mx-auto">
-        <p className="font-semibold my-4">Share this article on social media</p>
+        <p className="font-semibold my-4">
+          Chia sẻ bài viết này trên mạng xã hội
+        </p>
         <div className="flex">
           <img src={assets.facebook_icon} width={50} />
           <img src={assets.twitter_icon} width={50} />
